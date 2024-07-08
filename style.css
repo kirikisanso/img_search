@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+  .h1 {
+            position: absolute;
+            top: 10px;
+            color: rgb(0, 0, 0);
+            left: 10px;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .h1 span{
+            color: orange;
+        }
+
+body {
+    background-color: #ffffff;
+    font-optical-sizing: auto;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-weight: 600;
+    text-align: center;
+    margin: 100px auto 50px;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 50px;
+    background-color: #fffffffa;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px  25px rgba(197, 199, 199, 0.623);
+}
+
+/* .s1{
+    color: blue;
+}
+.s2{
+    color: red;
+} */
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+::placeholder{
+    color: rgb(136, 131, 131);
+    font-weight: 600;
+    
+
+}
+
+form button, #show-more-btn{
+    padding: 0 40px;
+    height: 100%;
+    background-color: rgb(221, 217, 217);
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    color: rgb(136, 131, 131);
+    cursor: pointer;
+    transition: 300ms;
+    font-size: 13px;
+
+}
+form button{
+    border-radius: 0px 10px 10px 0px;
+}
+form button:hover,#show-more-btn:hover{
+    background-color:  rgb(192, 189, 189);
+    transition: 300ms;
+}
+
+#show-more-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+     padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+.my-image {
+    max-width: 95%;
+    height: 180px;
+    object-fit: cover;
+    margin: 4px;
+    margin-top: 15px;
+    flex: 0 0 calc(33.33% - 20px);
+    border-radius: 8px;
+    transition: 100ms;
+
+}
+.my-image:hover{
+    box-shadow: 0 0 25px  rgb(179, 178, 178);
+    
+    transition: 100ms;
+}
+#search-result{
+    margin-top: 50px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+@media (max-width: 600px) {
+    .my-image {
+        width: 150px;
+        height: 150px;
+        
+    }
+    #search-result{
+        margin-left: 20px;
+    }
+    form button, #show-more-btn{
+        padding: 10px;
+        height: 100%;
+        /* background-color: rgb(255, 17, 0); */
+        border: 0;
+        outline: 0;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        transition: 300ms;
+        
+    }
+    h1{
+        font-weight: 600;
+        text-align: center;
+        margin: 30px auto 50px;
+    }
+}
